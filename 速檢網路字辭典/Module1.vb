@@ -9,6 +9,10 @@
         'Clipboard.SetText(x)
         Shell(Replace(GetDefaultBrowserEXE, """%1", "http://www.ccamc.co/cjkv.php?cjkv=" & UTF8str))
     End Sub
+    Sub 查詢漢語多功能字庫(ByVal x As String)
+        'Clipboard.SetText(x)
+        Shell(Replace(GetDefaultBrowserEXE, """%1", "http://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/search.php?word=" & UTF8str))
+    End Sub
 
     Sub 查詢國語辭典(ByVal x As String)
         'If Len(x) > 1 Then
