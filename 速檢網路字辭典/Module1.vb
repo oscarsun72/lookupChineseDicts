@@ -16,7 +16,7 @@
         'Else
         'Shell(Replace(GetDefaultBrowserEXE, """%1", "http://dict.revised.moe.edu.tw/cgi-bin/newDict/dict.sh?idx=dict.idx&cond=^" & 查詢字串轉換_國語會碼(x) & "$&pieceLen=50&fld=1&cat=&imgFont=1"))
         Shell(Replace(GetDefaultBrowserEXE, """%1", "http://dict.revised.moe.edu.tw/cbdic/search.htm"))
-        Shell(Replace(GetDefaultBrowserEXE, """%1", "http://dict2.variants.moe.edu.tw/variants/rbt/query_by_standard_tiles.rbt?command=clear"))
+        Shell(Replace(GetDefaultBrowserEXE, """%1", "https://dict.variants.moe.edu.tw/variants/rbt/query_by_standard_tiles.rbt?command=clear"))
         'End If
     End Sub
     Sub 查詢漢典(ByVal x As String) 'http://www.zdic.net/zd/zi/ZdicE4ZdicB8Zdic8B.htm
@@ -32,19 +32,19 @@
         Shell(Replace(GetDefaultBrowserEXE, """%1", "http://xiaoxue.iis.sinica.edu.tw/?char=" & UTF8str))
 
     End Sub
-    Sub 查詢國學大師汉语字典(ByVal x As String) 'http://www.guoxuedashi.com/zidian/93F5.html
+    Sub 查詢國學大師汉语字典(ByVal x As String) 'http://www.guoxuedashi.net/zidian/93F5.html
         On Error GoTo EH
         'Dim u8 As System.Text.Encoding = System.Text.Encoding.Unicode
         'Dim bytes As Byte() = u8.GetBytes(x)
-        'Const HDurl As String = "http://www.guoxuedashi.com/zidian/"
+        'Const HDurl As String = "http://www.guoxuedashi.net/zidian/"
         'Shell(Replace(GetDefaultBrowserEXE, """%1", HDurl & uni & ".html"))
         ''Shell(Replace(GetDefaultBrowserEXE, """%1", HDurl & PrintHexBytes_Unicode(bytes) & ".html"))
 
-        Const HDurl As String = "http://www.guoxuedashi.com/zidian/"
+        Const HDurl As String = "http://www.guoxuedashi.net/zidian/"
         'Dim u8 As System.Text.Encoding = System.Text.Encoding.Unicode
         Dim pu As String = "", Tpu As String = ""
-        'Shell(Replace(GetDefaultBrowserEXE, """%1", "http://www.guoxuedashi.com/so.php?sokeytm=" & x & "&ka=100"))
-        Shell(Replace(GetDefaultBrowserEXE, """%1", "http://www.guoxuedashi.com/zidian/so.php?sokeyzi=" & x & "&kz=1")) 'http://www.guoxuedashi.com/help/setie.php
+        'Shell(Replace(GetDefaultBrowserEXE, """%1", "http://www.guoxuedashi.net/so.php?sokeytm=" & x & "&ka=100"))
+        Shell(Replace(GetDefaultBrowserEXE, """%1", "http://www.guoxuedashi.net/zidian/so.php?sokeyzi=" & x & "&kz=1")) 'http://www.guoxuedashi.net/help/setie.php
         Exit Sub
 
 
