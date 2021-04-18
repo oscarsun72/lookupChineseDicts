@@ -13,7 +13,11 @@
             查詢國學大師汉语字典(X)
             查詢古今文字集成(X)
             查詢漢語多功能字庫(X)
-            Shell(Replace(GetDefaultBrowserEXE, """%1", "https://dict.variants.moe.edu.tw/variants/rbt/query_by_standard_tiles.rbt?command=clear"))
+            'Shell(Replace(GetDefaultBrowserEXE, """%1",
+            '    "https://dict.variants.moe.edu.tw/variants/rbt/query_by_standard_tiles.rbt?command=clear"))
+            '異體字字典
+            Process.Start(BrowserApp,
+              "https://dict.variants.moe.edu.tw/variants/rbt/query_by_standard_tiles.rbt?command=clear")
             End
         End If
     End Sub
